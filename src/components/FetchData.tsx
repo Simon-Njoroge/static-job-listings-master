@@ -83,7 +83,7 @@ const FetchData = () => {
       {jobs.filter(filterJob).map((job) => (
         <div
           key={job.id}
-          className={`bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row md:items-center border-l-4  ${job.featured ? 'border-cyan-700' : 'border-transparent'}`}
+          className={`bg-white rounded-lg shadow-md p-6 flex flex-col mb-2 md:flex-row md:items-center border-l-4  ${job.featured ? 'border-cyan-700' : 'border-transparent'}`}
         >
           <img
             src={`/images${job.logo.replace('./images', '')}`}
