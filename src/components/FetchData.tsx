@@ -60,11 +60,11 @@ const FetchData = () => {
   if (error) return <div className="text-center text-red-500 py-8">{error}</div>;
 
   return (
-    <div className="flex flex-col gap-6 p-6 max-w-4xl mx-auto">
+    <div className="flex flex-col gap-6 p-6 max-w-4xl mx-auto ">
       {filters.length > 0 && (
         <div className="flex flex-wrap items-center bg-white p-4 rounded-lg shadow mb-6 gap-2">
           {filters.map((filter) => (
-            <span key={filter} className="flex items-center bg-cyan-100 text-cyan-700 font-bold px-2 py-1 rounded">
+            <span key={filter} className="flex items-center bg-cyan-100 text-cyan-700 font-bold px-2 py-1 rounded ">
               {filter}
               <button
                 className="ml-2 bg-cyan-700 text-white rounded-full w-5 h-5 flex items-center justify-center hover:bg-gray-900"
@@ -83,7 +83,7 @@ const FetchData = () => {
       {jobs.filter(filterJob).map((job) => (
         <div
           key={job.id}
-          className={`bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row md:items-center border-l-4 ${job.featured ? 'border-cyan-700' : 'border-transparent'}`}
+          className={`bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row md:items-center border-l-4  ${job.featured ? 'border-cyan-700' : 'border-transparent'}`}
         >
           <img
             src={`/images${job.logo.replace('./images', '')}`}
