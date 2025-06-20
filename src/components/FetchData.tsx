@@ -31,11 +31,10 @@ const FetchData = () => {
       })
       .then((data) => {
         setTimeout(() => {
-          // Simulate a delay for loading effect
           setLoading(true);
           setJobs(data);
           setLoading(false);
-        }, 1000);
+        }, 2000);
       })
       .catch((err) => {
         setError(err.message);
